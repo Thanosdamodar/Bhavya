@@ -1,0 +1,383 @@
+/* #F8FCA3 #435233 */
+
+body{
+    margin: 0px;
+    background-color: #1f2d13;
+    font-family: "Noto sans";
+    
+}
+
+button{
+    margin:0px;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+h1{
+    margin: 0px;
+}
+
+/* Navigation Bar */
+.navigation_bar{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    height: 8vh;
+    font-size: 2vh;
+    color: #f8fca3;
+    z-index: 2;
+}
+
+.nav_opt{
+    color: #f8fca3;
+    transition: 0.3s;
+}
+
+.nav_opt:hover{
+    font-size: 3vh;
+}
+@media(min-width:500px){
+    .navigation_bar{
+        gap:100px;
+    }
+    .nav_opt{
+        color: #f8fca3;
+        font-size: 2.5vh;
+    }
+}
+
+/* Header Section */
+.header_board{
+    position: relative;
+    
+    height: 80vh;
+    margin: 20px;
+    border-radius: 35px;
+    display: flex;
+    justify-content: center;
+}
+
+.header_name{
+    position: absolute;
+    top: -20px;
+    color: #1f2d13;
+    font-size: 14vmax;
+    font-family: "Oswald";
+    text-align: center;
+}
+
+.image_container{
+    position: absolute;
+    bottom: 0px;
+    height: 32vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.my_image{
+    height: 100%;
+}
+
+.social_media_row{
+    position: absolute;
+    gap: 5px;
+    height: 6%;
+    display: flex;
+    top: 330px;
+}
+
+.social_media{
+    background-color: #1f2d13;
+    border-radius: 50%;
+    height: 100%;
+}
+
+.social{
+    height: 100%;
+}
+@media(min-width:500px){
+    .header_board{
+        background-color: #f8fca3;
+        height: 85vh;
+        margin: 20px;
+        border-radius: 35px;
+    }
+
+    .header_name{
+        color: #1f2d13;
+        position: absolute;
+        top: -80px;
+        font-size: 17vmax;
+        font-family: "Oswald";
+        text-align: center;
+    }
+    .image_container{
+        position: absolute;
+        bottom: 0px;
+        height: 500px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .social_media_row{
+        position: absolute;
+        gap: 5px;
+        height: 10%;
+        display: flex;
+        top: 350px;
+        left: 30px;
+    }
+}
+
+/* About Section */
+
+.about{
+    padding: 20px;
+    position: relative;
+    height: 450px;
+}
+
+.title_name{
+    position: absolute;
+    top: 50px;
+}
+
+.title{
+    font-family: "Oswald";
+    font-size: 120px;
+    color: #F8FCA3;
+}
+
+.content_container{
+    position:absolute;
+    right: 15px;
+    bottom: 100px;
+    width: 70%;
+}
+
+.content{
+    color: #F8FCA3;
+    font-size: 16px;
+}
+
+@media(min-width:500px){
+    .about{
+        padding: 0px;
+        position: relative;
+        height: 450px;
+        margin: 100px 400px 0px 400px;
+    }
+
+    .title{
+        font-family: "Oswald";
+        font-size: 200px;
+        color: #F8FCA3;
+    }
+
+    .content{
+        color: #F8FCA3;
+        font-size: 25px;
+    }
+    .content_container{
+        position:absolute;
+        right: 0px;
+        bottom: 0px;
+        width: 70%;
+    }
+}
+
+/* Work Section */
+
+.work_title{
+    position: relative;
+    height: 400px;
+}
+
+.work_name{
+    width: 80%;
+    position: absolute;
+    right: 15px;
+    text-align: right;
+}
+
+.work_content_container{
+    position:absolute;
+    right: 15px;
+    top: 200px;
+    /* border: 1px solid red; */
+    width: 60%;
+    text-align: right;
+}
+
+@media(min-width:500px){
+    .work_title{
+        position: relative;
+        height: 600px;
+        margin: 100px 400px 0px 400px;
+    }
+    
+    .work_name{
+        width: 50%;
+        position: absolute;
+        right: 0px;
+        text-align: right;
+    }
+    
+    .work_content_container{
+        position:absolute;
+        top: 300px;
+        width: 40%;
+        text-align: right;
+    }
+}
+
+/* Work Table */
+.work_table{
+    color: #F8FCA3;
+    position: relative;
+    margin: 0px 20px;
+}
+
+.work_row{
+    border-style: solid;
+    border-width: 3px 0px 0px 0px;
+    border-color: #435233;
+    gap: 50px;
+    padding: 50px;
+    transition: 0.5s;
+    border-radius: 35px;
+}
+
+.work_year{
+    font-size: 10px;
+}
+
+
+.work_row:hover{
+    background-color: #F8FCA3;
+    color: #1F2D13;
+    border-radius: 35px;
+
+}
+
+@media(min-width:500px){
+    .work_table{
+        color: #F8FCA3;
+        position: relative;
+        margin: 0px 300px 200px;
+    }
+    
+    .work_row{
+        border-style: solid;
+        border-width: 3px 0px 0px 0px;
+        border-color: #435233;
+        display: flex;
+        gap: 50px;
+        padding: 50px;
+        transition: 0.5s;
+        border-radius: 35px;
+    }
+    
+    .work_year{
+        width: 350px;
+        font-size: 1.8vh;
+    }
+    
+    .work_description{
+        width: 1000px;;
+    }
+    
+    .work_row:hover{
+        background-color: #F8FCA3;
+        color: #1F2D13;
+        border-radius: 35px;
+    
+    }
+}
+
+/* Contact Details */
+.Contact{
+    background-color: #F8FCA3;
+    position: relative;
+    height: 500px;
+    border-top-left-radius: 35px;
+    border-top-right-radius: 35px;
+    display: flex;
+    justify-content: center;
+}
+
+.Contact_Details{
+    position: absolute;
+    bottom: 30px;
+    font-size: 25px;
+}
+
+.mail{
+    bottom: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.mail_img{
+    height: 20px;
+}
+
+.download{
+    border-radius: 35px;
+    padding: 10px;
+    color: #F8FCA3;
+    background-color: #1F2D13;
+    height: 50px;
+    font-size: 15px;
+    border:none;
+    margin-left: 124px;
+}
+
+@media(min-width:500px){
+    .Contact{
+        background-color: #F8FCA3;
+        position: relative;
+        height: 600px;
+        border-top-left-radius: 35px;
+        border-top-right-radius: 35px;
+        display:block;
+    }
+    
+    .Contact_Details{
+        position: absolute;
+        right: 100px;
+        bottom: 70px;
+        font-size: 25px;
+        text-align: right;
+    }
+    
+    .mail{
+        display: flex;
+        justify-content: end;
+        gap: 10px;
+        font-size: 5vh;
+        font-family: "oswald";
+    }
+    
+    .mail_img{
+        height: 40px;
+        
+    }
+    
+    .download{
+        border-radius: 15px;
+        position: relative;
+        padding: 20px;
+        color: #F8FCA3;
+        background-color: #1F2D13;
+        height: 70px;
+        font-size: 25px;
+        margin: 0px auto;
+    }
+}
